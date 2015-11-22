@@ -1,15 +1,39 @@
 main()
-var PASSWORD = "the_PASSword"
+var PASSWORD = "My_Password1!";
+var USERNAME = "my_username";
+var username_input = $(document.getElementById("username_input"));
+var password_input = $(document.getElementById("password_input"));
+
 function main(){
 	$(document).keypress(keypress);
+	$(document.getElementById("submit_button")).click(function(){guess(getPassword(),getUsername())});
 }
 
 function keypress(e){
-	console.log(e);
+	if (e.keyCode === 13){
+		guess(getPassword(),getUsername());
+	}
 }
 
-function check(pass){
+function guess(pass,username){
+	if(check(pass)){
+		
+	}
+	else{
+
+	}
+}
+
+function check(pass, username){
 	return getHash(pass) = getHash(PASSWORD);
+}
+
+function getUsername(){
+	return username_input.val();
+}
+
+function getPassword(){
+	return password_input.val();
 }
 
 function getHash(s) {
