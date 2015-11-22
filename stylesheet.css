@@ -7,7 +7,12 @@
     font-family: HelveticaNeue;
     letter-spacing: 1px;
     font-weight: 700;
+    color: #737373 ;
 }
+/*
+body {
+    background-image: url("http://blog.hdwallsource.com/wp-content/uploads/2014/12/snowy-bokeh-wallpaper-23998-24655-hd-wallpapers.jpg");
+}*/
 
 #login {
     width: 350px;
@@ -16,6 +21,8 @@
     border: 4px solid #e6e6e6;
     border-radius: 15px;
     padding-top: 35px;
+    text-align: center;
+    background-color: #ffffff;
 }
 
 .field {
