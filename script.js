@@ -4,7 +4,8 @@ var USERNAME = "my_username";
 
 function main(){
 	$(document).keypress(keypress);
-	$(document.getElementById("submit_button")).click(submit);
+	$(document.getElementById("sub")).click(submit);
+	console.log("here");
 }
 
 function keypress(e){
@@ -18,7 +19,6 @@ function submit(){
 }
 
 function guess(pass,username){
-	console.log("guessing: "+pass+ "   and  "+username);
 	$(document.getElementById("requirements_div")).hide()
 	if(check(pass)){
 		//success
@@ -29,15 +29,15 @@ function guess(pass,username){
 }
 
 function check(pass, username){
-	return getHash(pass) = getHash(PASSWORD) && username === USERNAME;
+	return getHash(pass) === getHash(PASSWORD) && username === USERNAME;
 }
 
 function getUsername(){
-	return $(document.getElementById("username_input")).val();
+	return $(document.getElementById("username_input")).val() || "";
 }
 
 function getPassword(){
-	return $(document.getElementById("password_input")).val();
+	return $(document.getElementById("password_input")).val() || "";
 }
 
 function getHash(s) {
