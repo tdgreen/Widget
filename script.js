@@ -1,4 +1,5 @@
 main()
 function main(){
-	var div = $(document.createElement('div'));
+	var sidebar = $(document.getElementById("sidebar"));
+	
 }
