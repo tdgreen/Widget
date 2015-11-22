@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('font/HelveticaNeue.ttf');
+}
+
+* {
+    font-family: HelveticaNeue;
+}
+
+#field {
+    font-size: 15px;
+    margin: 0px auto 20px auto;
+}
+
+p {
+    margin: 5px;
+}
