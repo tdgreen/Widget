@@ -1,5 +1,6 @@
 main()
+var IMG_SOURCE = "dog.png";
+
 function main(){
-	var sidebar = $(document.getElementById("sidebar"));
-	
+
 }
