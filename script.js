@@ -1,7 +1,11 @@
 main()
 var PASSWORD = "the_PASSword"
 function main(){
+	$(document).keypress(keypress);
+}
 
+function keypress(e){
+	console.log(e);
 }
 
 function check(pass){
